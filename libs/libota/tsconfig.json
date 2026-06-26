@@ -1,0 +1,3 @@
+{
+  "extends": "@gtdev/eslint-config/tsconfig.rn.json"
+}

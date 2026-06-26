@@ -1,0 +1,67 @@
+{
+  "name": "@gtdev/rtn-libota",
+  "version": "0.0.1",
+  "private": true,
+  "description": "React Native Turbo Module for library OTA",
+  "react-native": "ts/index",
+  "source": "ts/index",
+  "types": "ts/index.ts",
+  "files": [
+    "ts",
+    "cpp",
+    "ios",
+    "react-native.config.js",
+    "LibOTAModule.podspec",
+    "!cpp/**/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "keywords": [
+    "react-native",
+    "android",
+    "ios"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint:ts && npm run lint:cpp",
+    "lint:ts": "eslint ts/*",
+    "lint:cpp": "clang-format --style=file:node_modules/@gtdev/eslint-config/.clang-format -i cpp/common/*.h cpp/common/*.hpp cpp/common/*.cpp",
+    "codegen:cpp": "ts-node scripts/codegen.ts"
+  },
+  "author": "comword@live.com",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/comword/fe-mono#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comword/fe-mono"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@gtdev/eslint-config": "workspace:*",
+    "@react-native/codegen": "0.81.6",
+    "eslint": "^8.19.0",
+    "jest": "^29.2.1",
+    "prettier": "^2.4.1",
+    "react-native": "0.85.3",
+    "ts-node": "^10.9.2",
+    "typescript": "~6.0.3"
+  },
+  "codegenConfig": {
+    "name": "RTNLibOTA",
+    "type": "modules",
+    "jsSrcsDir": "ts",
+    "android": {
+      "javaPackageName": "org.gtdev.sheengsiul.rtnlibota"
+    },
+    "ios": {
+      "modulesProvider": {
+        "NativeLibOTAModule": "NativeLibOTAModuleProvider"
+      }
+    }
+  }
+}

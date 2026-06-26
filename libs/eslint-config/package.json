@@ -1,0 +1,50 @@
+{
+  "name": "@gtdev/eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Shared ESLint configurations",
+  "author": "comword@live.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.26.10",
+    "@babel/eslint-plugin": "^7.26.10",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@react-native-community/eslint-plugin": "^1.1.0",
+    "@rushstack/eslint-patch": "^1.11.0",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-ft-flow": "^3.0.11",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.14.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-native": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "jest": "^29.2.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.1"
+  },
+  "scripts": {
+    "_phase:build": "rushx --quiet build",
+    "_phase:lint": "rushx lint",
+    "_phase:pre-build": "",
+    "_phase:test": "rushx --quiet test",
+    "_phase:type-check": "",
+    "build": "",
+    "test": "",
+    "lint": "eslint --fix ."
+  }
+}

@@ -1,0 +1,12 @@
+# same as default
+arrowParens: always
+bracketSpacing: true
+bracketSameLine: false
+endOfLine: auto
+jsxSingleQuote: false
+quoteProps: as-needed
+semi: true
+tabWidth: 2
+useTabs: false
+singleQuote: true
+trailingComma: all

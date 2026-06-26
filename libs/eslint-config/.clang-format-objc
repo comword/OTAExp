@@ -1,0 +1,30 @@
+IndentWidth: 2
+TabWidth: 2
+
+Language: ObjC
+Standard: Latest
+BasedOnStyle: Google
+
+AccessModifierOffset: -1
+ContinuationIndentWidth: 4
+
+BreakBeforeTernaryOperators: true
+BreakBeforeBinaryOperators: false
+ColumnLimit: 80
+
+BreakConstructorInitializersBeforeComma: false
+ConstructorInitializerIndentWidth: 4
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+AlwaysBreakTemplateDeclarations: true
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+SortIncludes: false
+BreakStringLiterals: false
+ReflowComments: true

@@ -1,0 +1,16 @@
+{
+  "name": "@sheengsiul/hwt605-bt-pio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "clang-format --style=file:node_modules/@gtdev/eslint-config/.clang-format --dry-run -i src/*.cpp",
+    "lint:fix": "clang-format --style=file:node_modules/@gtdev/eslint-config/.clang-format -i src/*.cpp",
+    "build": "pio run",
+    "upload": "pio run --target upload",
+    "monitor": "picocom -b 115200 /dev/tty.usbmodem21303"
+  },
+  "devDependencies": {
+    "@gtdev/eslint-config": "workspace:*",
+    "clang-format": "^1.8.0"
+  }
+}
