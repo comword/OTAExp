@@ -145,7 +145,7 @@ class ConfigCallbacks : public BLECharacteristicCallbacks {
 
 void setupBLE() {
   // Matches the OTA app's default scan name (OtaProtocolConfig.deviceName).
-  BLEDevice::init("ICM20948&BMP280-Left");
+  BLEDevice::init("ICM20948&BMP280-Right");
 
   // Allow a large ATT MTU so OTA data chunks can be up to ~512 bytes
   // (the host negotiates up from here; falls back to 23 if it does not).
